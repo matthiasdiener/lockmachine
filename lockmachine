@@ -4,7 +4,7 @@
 # algorithm:
 # - create /etc/lockmachine_message
 # - change /etc/passwd to run /etc/lockmachine_message for every user except caller
-# - 
+
 
 lock_filename=/etc/lockmachine_message
 dt=$(date)
@@ -24,7 +24,7 @@ if [[ $real_user == "" || $UID -ne 0 ]]; then
 fi
 
 
-echo "locked by user $real_user at $dt"
+echo "locked by user '$real_user' at $dt"
 
 
 echo -e "#!/bin/bash\n" > $lock_filename
