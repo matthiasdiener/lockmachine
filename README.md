@@ -1,5 +1,5 @@
 # lockmachine
-Scripts to lock and unlock other users from accessing a machine
+Scripts to lock and unlock other users from accessing a machine.
 
 # Usage
 
